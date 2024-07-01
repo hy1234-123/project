@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        background: rgb(114, 73, 73);
+      }
+
+      .ham {
+        position: relative;
+        margin: 200px auto;
+        width: 400px;
+        height: 380px;
+        animation-name: starRotate;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: unset;
+        animation-direction: alternate;
+      }
+      @keyframes starRotate {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      .ham .ear {
+        position: absolute;
+        top: 0;
+        width: 90px;
+        height: 90px;
+        border: 7px solid #000;
+        border-radius: 100%;
+        background: #fcccd6;
+      }
+
+      .ham .ear.left {
+        left: 5px;
+      }
+
+      .ham .ear.right {
+        right: 5px;
+      }
+
+      .ham .face {
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        height: 350px;
+        border-radius: 70% 70% 50% 50%;
+        border: 7px solid #000;
+        background: #fcccd6;
+      }
+
+      .ham .eyebrow {
+        position: absolute;
+        top: 220px;
+        width: 70px;
+        height: 20px;
+        border-radius: 14px;
+        background: #fa6d80;
+      }
+      .ham .eyebrow.left {
+        left: 90px;
+      }
+
+      .ham .eyebrow.right {
+        right: 90px;
+      }
+
+      .ham .eye {
+        position: absolute;
+        top: 147px;
+        width: 56px;
+        height: 76px;
+        border-radius: 70% 70% 45% 45%;
+        background: #000;
+      }
+      .ham .eye.left {
+        left: 98px;
+      }
+
+      .ham .eye.right {
+        right: 98px;
+      }
+      .ham .el {
+        position: absolute;
+        top: 17px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #ffffff;
+      }
+
+      .ham .el {
+        top: 10px;
+        left: 7px;
+      }
+      .ham .nose {
+        width: 50px;
+        height: 50px;
+        margin-left: 170px;
+        margin-top: 200px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        border: 7px solid #000;
+      }
+
+      .ham .er {
+        position: absolute;
+        top: 17px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #ffffff;
+      }
+      .ham .er {
+        top: 10px;
+        left: 7px;
+      }
+      .ham .inner {
+        margin-top: 10px;
+        margin-left: 9px;
+        width: 60px;
+        height: 60px;
+        border: 7px solid #000;
+        border-radius: 60%;
+        background: #ff90a6;
+      }
+      .ham .mouth.left {
+        background: #000000;
+        width: 60px;
+        height: 7px;
+        border-radius: 10% 10% 100% 100%;
+        margin-left: 140px;
+      }
+      .ham .mouth.right {
+        background: #000000;
+        width: 60px;
+        height: 7px;
+        border-radius: 10% 10% 100% 100%;
+        margin-left: 65px;
+        margin-bottom: 5px;
+      }
+
+      .heart {
+        position: relative;
+        width: 100px;
+        height: 80px;
+      }
+      .heart:before,
+      .heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: rgb(235, 7, 45);
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        margin-left: 300px;
+        margin-top: 10px;
+      }
+      .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+      .heart {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.5s;
+        transition-property: transform;
+      }
+
+      .heart:hover,
+      .heart:focus,
+      .heart:active {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ham">
+      <div class="ear left">
+        <div class="inner"></div>
+      </div>
+      <div class="ear right">
+        <div class="inner"></div>
+      </div>
+      <div class="face">
+        <div class="eyebrow left"></div>
+        <div class="eyebrow right"></div>
+        <div class="eye left">
+          <div class="el"></div>
+        </div>
+        <div class="eye right">
+          <div class="er"></div>
+        </div>
+        <div class="nose">
+          <div class="nose1"></div>
+        </div>
+        <div class="mouth left">
+          <div class="mouth right"></div>
+        </div>
+        <div class="heart">
+          <div class="heart1"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
